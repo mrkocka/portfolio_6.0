@@ -36,36 +36,34 @@ a {
 
 .text-style {
   color: var(--main-text);
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 3px 3px 7px black;
 }
 
-.btn{
-    padding: 10px 35px;
-    background: transparent;
-    background-color: rgba(128, 128, 128, 0.219);
-    border: 1px solid white;
-    color: #eeeeff;
-    outline: none;
-    transition: .6s ease;
-    font-family: menuFont;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    margin-top: 2rem;
+.btn {
+  padding: 10px 35px;
+  background: transparent;
+  background-color: rgba(128, 128, 128, 0.219);
+  border: 1px solid white;
+  color: #eeeeff;
+  outline: none;
+  transition: 0.6s ease;
+  font-family: menuFont;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin-top: 2rem;
 }
 
-.btn:hover{
-    cursor: pointer;
-    background-color:white;
-    color: black;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
-    
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 }
 
 /*------------------------------------------------------------Header--------------------------------------------------------------------*/
-#home {
-  outline: 2px solid whitesmoke;
+.hero {
   width: 100%;
-  height: 50rem;
+  height: 58rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
     url(../img/klavi_bg_optimized.jpg);
   background-position: center;
@@ -75,6 +73,8 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/*-----Nav------*/
 .nav-menu {
   height: 5rem;
   display: flex;
@@ -83,8 +83,8 @@ a {
   position: fixed;
   width: 100%;
   top: 0;
- /*  background-color: rgba(0, 0, 0, 0.651); */
- background-color: var(--main-bcnav);
+  /*  background-color: rgba(0, 0, 0, 0.651); */
+  background-color: var(--main-bcnav);
 }
 
 .menu-list {
@@ -100,8 +100,7 @@ a {
   font-family: menuFont;
 }
 .list-item:hover {
-    
-  }
+}
 
 #home h1 {
   font-family: menuFont;
@@ -115,4 +114,140 @@ a {
   font-size: 5rem;
   letter-spacing: 0.4rem;
   text-align: center;
+}
+
+/*-----About--------*/
+
+#about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+/*   outline: 2px solid whitesmoke; */
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.about-img {
+  min-width: 353px;
+  height: 415px;
+  border-radius: 1.25rem;
+  margin: 1rem;
+}
+
+.about-text {
+  /*   background-color: gray; */
+  font-size: 1.8rem;
+  line-height: 180%;
+  padding: 2rem;
+  text-align: justify;
+  font-family: titleFont;
+}
+
+.text-git {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.text-git a {
+  display: flex;
+}
+
+.text-git img {
+  width: 3rem;
+}
+
+.skills{
+   /* background-color: #cecece67;  */
+    width: 80%;
+    height: auto;
+    margin: 2rem auto 4rem auto;
+}
+
+.skil-title{
+    font-family: menuFont;
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+    margin: 1rem 0 1rem 4rem;
+}
+.skills-logo{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.skills-logo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 95px;
+    
+}
+
+.skil-logo-img{
+    width: 100%;
+}
+
+.skil-text{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*-----Portfolio--------*/
+
+#portfolio{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portfolio-button-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio-table{
+ background-color: #cecece6b;
+ width: 97%;
+ margin: 0 auto;
+ height: 40rem; /*Ezt majd tedd át autora*/
+}
+
+/*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1360px) {
+    .about-text {
+        font-size: 1.4rem;
+        text-align: start;
+    }
+}
+@media only screen and (max-width: 1094px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 820px) {
+  .menu-list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 530px) {
 }
