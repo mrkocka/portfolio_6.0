@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+
+/*colours*/
+:root {
+  --main-text: #cecece;
+  --main-bcitem: #eeeeff;
+  --main-bcitemextra: red;
+  --main-bcsecton: #141414;
+  --main-bcnav: #141414a1;
+}
+
+/*font-family*/
+
+@font-face {
+  font-family: menuFont;
+  src: url(../fonts/AmaticSC-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-weight: bold;
+}
+
+.text-style {
+  color: var(--main-text);
+  text-shadow: 2px 2px 4px black;
+}
+
+.btn{
+    padding: 10px 35px;
+    background: transparent;
+    background-color: rgba(128, 128, 128, 0.219);
+    border: 1px solid white;
+    color: #eeeeff;
+    outline: none;
+    transition: .6s ease;
+    font-family: menuFont;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color:white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    
+}
+
+/*------------------------------------------------------------Header--------------------------------------------------------------------*/
+#home {
+  outline: 2px solid whitesmoke;
+  width: 100%;
+  height: 50rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
+    url(../img/klavi_bg_optimized.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+ /*  background-color: rgba(0, 0, 0, 0.651); */
+ background-color: var(--main-bcnav);
+}
+
+.menu-list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.list-item {
+  color: #eeeeff;
+  transition: all 0.5s ease;
+  font-size: 2.3rem;
+  font-family: menuFont;
+}
+.list-item:hover {
+    
+  }
+
+#home h1 {
+  font-family: menuFont;
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+
+#home h2 {
+  font-family: menuFont;
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
+}
