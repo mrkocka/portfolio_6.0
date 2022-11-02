@@ -10,11 +10,19 @@ body {
 a {
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.invisible{
+  display: none;
+}
+
 
 /*colours*/
 :root {
   --main-text: #cecece;
-  --main-bcitem: #eeeeff;
+  --main-bcitem: #D6D6FF;
   --main-bcitemextra: red;
   --main-bcsecton: #141414;
   --main-bcnav: #141414a1;
@@ -121,14 +129,14 @@ a {
 #about {
   display: flex;
   flex-direction: column;
-  margin-top: 7rem;
+  padding-top: 5rem;
 }
 
 .about-container {
   display: flex;
   align-items: center;
   gap: 0rem;
-/*   outline: 2px solid whitesmoke; */
+  /*   outline: 2px solid whitesmoke; */
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -165,83 +173,114 @@ a {
   width: 3rem;
 }
 
-.skills{
-   /* background-color: #cecece67;  */
-    width: 80%;
-    height: auto;
-    margin: 2rem auto 4rem auto;
+.skills {
+  /* background-color: #cecece67;  */
+  width: 80%;
+  height: auto;
+  margin: 2rem auto 4rem auto;
 }
 
-.skil-title{
-    font-family: menuFont;
-    font-size: 2.5rem;
-    letter-spacing: .3rem;
-    margin: 1rem 0 1rem 4rem;
+.skil-title {
+  font-family: menuFont;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0 1rem 4rem;
 }
-.skills-logo{
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-}
-
-.skills-logo div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 95px;
-    
+.skills-logo {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-.skil-logo-img{
-    width: 100%;
+.skills-logo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 95px;
 }
 
-.skil-text{
-    text-align: center;
-    font-size: 1.5rem;
+.skil-logo-img {
+  width: 100%;
+}
+
+.skil-text {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 /*-----Portfolio--------*/
 
-#portfolio{
-    height: 70rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+#portfolio {
+  margin-top: 8rem;
+  padding-top: 5rem;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
 }
 
-.portfolio-button-list{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 2rem;
-    margin-bottom: 2rem;
+#portfolio h2, #blog-post h2 {
+  font-size: 5rem;
+  font-family: menuFont;
+  letter-spacing: 0.3rem;
+  text-align: center;
 }
 
-.portfolio-table{
- background-color: #cecece6b;
- width: 97%;
- margin: 0 auto;
- height: 40rem; /*Ezt majd tedd át autora*/
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.webpage-table, .webapp-table, .grafik-table {
+ /*  outline: 2px solid ghostwhite; */
+  width: 97%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  height: 50rem; /*Ezt majd tedd át autora*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+ /*  overflow: scroll;
+  overflow-x:hidden; */
+}
+
+.portfolio-item {
+  background-color: var(--main-text);
+  width: 30rem;
+  height: 20rem;
+  border-radius: 25px;
+}
+
+/*-----Blog Post--------*/
+
+#blog-post{
+  margin-top: 8rem;
+  padding-top: 5rem;
+  height: 80rem;
 }
 
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 1360px) {
-    .about-text {
-        font-size: 1.4rem;
-        text-align: start;
-    }
+  .about-text {
+    font-size: 1.4rem;
+    text-align: start;
+  }
 }
 @media only screen and (max-width: 1094px) {
-    .about-container {
-        flex-direction: column;
-    }
+  .about-container {
+    flex-direction: column;
+  }
 }
-
 
 @media only screen and (max-width: 820px) {
   .menu-list {
