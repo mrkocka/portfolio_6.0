@@ -14,15 +14,14 @@ html {
   scroll-behavior: smooth;
 }
 
-.invisible{
+.invisible {
   display: none;
 }
-
 
 /*colours*/
 :root {
   --main-text: #cecece;
-  --main-bcitem: #D6D6FF;
+  --main-bcitem: #cecece8e;
   --main-bcitemextra: red;
   --main-bcsecton: #141414;
   --main-bcnav: #141414a1;
@@ -106,8 +105,6 @@ html {
   transition: all 0.5s ease;
   font-size: 2.3rem;
   font-family: menuFont;
-}
-.list-item:hover {
 }
 
 #home h1 {
@@ -220,10 +217,12 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-
 }
 
-#portfolio h2, #blog-post h2 {
+#portfolio h2,
+#blog-post h2,
+#video-post h2,
+#services h2 {
   font-size: 5rem;
   font-family: menuFont;
   letter-spacing: 0.3rem;
@@ -238,8 +237,10 @@ html {
   margin-bottom: 2rem;
 }
 
-.webpage-table, .webapp-table, .grafik-table {
- /*  outline: 2px solid ghostwhite; */
+.webpage-table,
+.webapp-table,
+.grafik-table {
+  /*  outline: 2px solid ghostwhite; */
   width: 97%;
   margin: 0 auto;
   padding: 1rem 0;
@@ -249,12 +250,12 @@ html {
   align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
- /*  overflow: scroll;
+  /*  overflow: scroll;
   overflow-x:hidden; */
 }
 
 .portfolio-item {
-  background-color: var(--main-text);
+  background-color: var(--main-bcitem);
   width: 30rem;
   height: 20rem;
   border-radius: 25px;
@@ -262,10 +263,73 @@ html {
 
 /*-----Blog Post--------*/
 
-#blog-post{
+#blog-post {
   margin-top: 8rem;
   padding-top: 5rem;
-  height: 80rem;
+  height: 55rem;
+}
+
+.blog-table {
+  width: 96%;
+  margin: 4rem auto;
+  /* background-color: rgba(0, 0, 255, 0.507); */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.post-table-item {
+  width: 20rem;
+  height: 28rem;
+  background-color: var(--main-bcitem);
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+/*-----Video Post--------*/
+#video-post {
+  margin-top: 3rem;
+  padding-top: 5rem;
+  height: 60rem;
+  margin-bottom: 4rem;
+}
+
+.video-table {
+  width: 90%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.video-item {
+  width: 35rem;
+  height: 20rem;
+  background-color: var(--main-bcitem);
+  border-radius: 25px;
+  padding: 1rem;
+}
+/*-----Services--------*/
+
+#services {
+  height: 60rem;
+  padding-top: 5rem;
+}
+.services-table {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 5rem;
+}
+
+.services-item {
+  width: 22rem;
+  height: 28rem;
+  padding: 1rem;
+  background-color: var(--main-bcitem);
+  border-radius: 25px;
 }
 
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
@@ -289,4 +353,44 @@ html {
 }
 
 @media only screen and (max-width: 530px) {
+}
+
+/*-------------------------------------------------------------------------------Animacio--------------------------------------------------------------------------------*/
+
+.services-item:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    cursor: pointer;
+  }
 }
