@@ -72,7 +72,7 @@ html {
   width: 100%;
   height: 58rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
-    url(../img/klavi_bg_optimized.jpg);
+    url(../img/klavi_bg_optimized.webp);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -190,22 +190,22 @@ html {
   flex-wrap: wrap;
 }
 
-.skills-logo div {
+.skill-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  width: 95px;
+  width: 100px;
 }
 
 .skil-logo-img {
-  width: 100%;
+  width: 80%;
 }
 
 .skil-text {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /*-----Portfolio--------*/
@@ -222,7 +222,8 @@ html {
 #portfolio h2,
 #blog-post h2,
 #video-post h2,
-#services h2 {
+#services h2,
+#contact h2 {
   font-size: 5rem;
   font-family: menuFont;
   letter-spacing: 0.3rem;
@@ -332,6 +333,62 @@ html {
   border-radius: 25px;
 }
 
+/*-----Contact--------*/
+
+#contact {
+  padding-top: 5rem;
+
+  margin-bottom: 20rem;
+}
+
+#contact h2 {
+  margin-bottom: 4rem;
+}
+
+.contact-box {
+  background-image: url(../img/massageBg.webp);
+  width: 70%;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form {
+  width: 33rem;
+  height: 35rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.input {
+  width: 22rem;
+  height: 3rem;
+  font-family: titleFont;
+}
+
+textarea {
+  width: 30rem;
+  height: 10rem;
+}
+
+.input,
+textarea {
+  font-family: titleFont;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  border: none;
+  padding: 0.4rem;
+  background-color: var(--main-text);
+  color: var(--main-bcsecton);
+}
+
+[type="submit"] {
+  width: 130px;
+}
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 1360px) {
