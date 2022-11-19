@@ -389,6 +389,13 @@ textarea {
 [type="submit"] {
   width: 130px;
 }
+
+/*-----Contact--------*/
+
+footer{
+  background-color: #262626;
+  min-height: 15rem;
+}
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 1360px) {
