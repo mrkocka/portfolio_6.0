@@ -392,10 +392,100 @@ textarea {
 
 /*-----Contact--------*/
 
-footer{
+footer {
   background-color: #262626;
   min-height: 15rem;
+  display: flex;
+  padding: 0.5em;
 }
+
+footer ul {
+  list-style: none;
+}
+
+footer a,
+p {
+  text-decoration: none;
+  color: var(--main-text);
+}
+
+footer section {
+  width: 33.33%;
+  padding: 0.3rem;
+}
+
+.center-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.soc-icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.soc-icon-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+}
+
+.soc-icon-list img {
+  width: 2.5rem;
+}
+
+.add-box-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-box a {
+  font-size: 1.5rem;
+}
+
+.add-box img {
+  width: 1.4rem;
+}
+
+
+
+.logo-box img {
+  width: 150px;
+}
+
+footer p {
+  font-size: 0.7rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-nav-list li {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: menuFont;
+  letter-spacing: .2rem;
+}
+
+.footer-nav-list li a:hover {
+  color: rgba(248, 248, 255, 0.288);
+}
+
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 1360px) {
