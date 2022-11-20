@@ -46,6 +46,18 @@ html {
   text-shadow: 3px 3px 7px black;
 }
 
+#portfolio h2,
+#blog-post h2,
+#video-post h2,
+#services h2,
+#contact h2 {
+  font-size: 5rem;
+  font-family: menuFont;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  text-shadow: 3px 3px 4px black;
+}
+
 .btn {
   padding: 10px 35px;
   background: transparent;
@@ -112,6 +124,7 @@ html {
   font-size: 6rem;
   letter-spacing: 0.5rem;
   text-align: center;
+  text-shadow: 3px 3px 4px black;
 }
 
 #home h2 {
@@ -153,6 +166,7 @@ html {
   padding: 2rem;
   text-align: justify;
   font-family: titleFont;
+  text-shadow: 3px 3px 4px black;
 }
 
 .text-git {
@@ -161,6 +175,8 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  text-shadow: 3px 3px 4px black;
+  font-family: titleFont;
 }
 .text-git a {
   display: flex;
@@ -171,8 +187,7 @@ html {
 }
 
 .skills {
-  /* background-color: #cecece67;  */
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 2rem auto 4rem auto;
 }
@@ -182,11 +197,12 @@ html {
   font-size: 2.5rem;
   letter-spacing: 0.3rem;
   margin: 1rem 0 1rem 4rem;
+  text-shadow: 3px 3px 4px black;
 }
 .skills-logo {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
 
@@ -195,8 +211,8 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  width: 100px;
+  gap: 0.5rem;
+  width: 110px;
 }
 
 .skil-logo-img {
@@ -205,7 +221,8 @@ html {
 
 .skil-text {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-family: titleFont;
 }
 
 /*-----Portfolio--------*/
@@ -213,20 +230,9 @@ html {
 #portfolio {
   margin-top: 8rem;
   padding-top: 5rem;
-  height: 70rem;
+  min-height: 70rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
-}
-
-#portfolio h2,
-#blog-post h2,
-#video-post h2,
-#services h2,
-#contact h2 {
-  font-size: 5rem;
-  font-family: menuFont;
-  letter-spacing: 0.3rem;
   text-align: center;
 }
 
@@ -245,7 +251,7 @@ html {
   width: 97%;
   margin: 0 auto;
   padding: 1rem 0;
-  height: 50rem; /*Ezt majd tedd át autora*/
+  height: auto; /*Ezt majd tedd át autora*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,6 +263,7 @@ html {
 
 .portfolio-item {
   background-color: var(--main-bcitem);
+  max-width: 100%;
   width: 30rem;
   height: 20rem;
   border-radius: 25px;
@@ -267,15 +274,16 @@ html {
 #blog-post {
   margin-top: 8rem;
   padding-top: 5rem;
-  height: 55rem;
+  min-height: 55rem;
 }
 
 .blog-table {
   width: 96%;
   margin: 4rem auto;
-  /* background-color: rgba(0, 0, 255, 0.507); */
+  /* background-color: rgba(0, 0, 255, 0.507);  */
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 1rem;
 }
@@ -292,7 +300,7 @@ html {
 #video-post {
   margin-top: 3rem;
   padding-top: 5rem;
-  height: 60rem;
+  min-height: 60rem;
   margin-bottom: 4rem;
 }
 
@@ -306,7 +314,8 @@ html {
 }
 
 .video-item {
-  width: 35rem;
+  max-width: 100%;
+  width: 30rem;
   height: 20rem;
   background-color: var(--main-bcitem);
   border-radius: 25px;
@@ -315,18 +324,19 @@ html {
 /*-----Services--------*/
 
 #services {
-  height: 60rem;
+  min-height: 60rem;
   padding-top: 5rem;
 }
 .services-table {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
   padding-top: 5rem;
 }
 
 .services-item {
-  width: 22rem;
+  width: 20rem;
   height: 28rem;
   padding: 1rem;
   background-color: var(--main-bcitem);
@@ -390,7 +400,7 @@ textarea {
   width: 130px;
 }
 
-/*-----Contact--------*/
+/*-----Footer--------*/
 
 footer {
   background-color: #262626;
@@ -444,22 +454,22 @@ footer section {
 
 .add-box a {
   font-size: 1.5rem;
+  text-shadow: 3px 3px 4px black;
 }
 
 .add-box img {
   width: 1.4rem;
 }
 
-
-
 .logo-box img {
   width: 150px;
 }
 
 footer p {
-  font-size: 0.7rem;
-  letter-spacing: 0.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.3rem;
   font-weight: bold;
+  text-shadow: 3px 3px 4px black;
 }
 
 .footer-nav {
@@ -479,7 +489,8 @@ footer p {
   text-align: center;
   font-weight: bold;
   font-family: menuFont;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 3px 3px 4px black;
 }
 
 .footer-nav-list li a:hover {
@@ -488,16 +499,108 @@ footer p {
 
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
 
+/*TODO A media qveriknél kelleni fog a secionok elnevezése az átláthatóság miatt!*/
+
 @media only screen and (max-width: 1360px) {
   .about-text {
     font-size: 1.4rem;
     text-align: start;
   }
+  .post-table-item {
+    width: 25rem;
+    height: 28rem;
+  }
 }
+
+@media only screen and (max-width: 1119px) {
+  .video-table {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1094px) {
   .about-container {
     flex-direction: column;
   }
+  .portfolio-item {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  .video-item {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  .services-table {
+    gap: 2rem;
+  }
+
+  .services-item {
+    width: 20rem;
+    height: 28rem;
+  }
+
+  /*-----Footer--------*/
+
+  .soc-icon-list {
+    gap: 2rem;
+  }
+
+  .add-box a {
+    font-size: 1.2rem;
+  }
+
+  .footer-nav-list li {
+    font-size: 1.1rem;
+  }
+
+  footer p {
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  /*TODO hambi menu*/
+}
+
+@media only screen and (max-width: 920px) {
+  .post-table-item {
+    width: 20rem;
+    height: 28rem;
+  }
+
+  .webpage-table,
+  .webapp-table,
+  .grafik-table {
+    gap: 1rem;
+  }
+
+  .video-table {
+    gap: 1rem;
+  }
+
+  /*footer*/
+  footer {
+    flex-direction: column;
+  }
+
+  .logo-box {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .center-box {
+    width: 100%;
+    gap: 2rem;
+    order: 2;
+  }
+
+  .footer-nav {
+    width: 100%;
+  }
+  /*TODO a nav menű elemei lehetnek nagyobbak*/
 }
 
 @media only screen and (max-width: 820px) {
