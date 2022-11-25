@@ -17,8 +17,12 @@
   <body>
     <header>
       <nav class="nav-menu">
-        <ul class="menu-list">
-          <li><a href="#home" class="list-item text-style">Főoldal</a></li>
+        <div id="js-button" class="hmenu-button">
+          <img id="button-img" src="./img/icon/list.svg" alt="button" />
+        </div>
+
+        <ul id="menu-list">
+          <li><a class="list-item text-style" href="#home">Főoldal</a></li>
           <li><a href="#about" class="list-item text-style">Rólam</a></li>
           <li>
             <a href="#portfolio" class="list-item text-style">Portfólió</a>
@@ -32,8 +36,9 @@
           <li>
             <a href="#services" class="list-item text-style">Szolgáltatások</a>
           </li>
-
-          <li><a href="#contact" class="list-item text-style">Kapcsolat</a></li>
+          <li>
+            <a href="#contact" class="list-item text-style">Kapcsolat</a>
+          </li>
         </ul>
       </nav>
       <section id="home" class="hero text-style">
@@ -196,6 +201,9 @@
           <div class="video-item">2</div>
           <div class="video-item">3</div>
           <div class="video-item">4</div>
+          <div class="video-item">5</div>
+          <div class="video-item">6</div>
+          
         </div>
       </section>
 
@@ -288,5 +296,6 @@
         </ul>
       </section>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
