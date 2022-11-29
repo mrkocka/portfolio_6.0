@@ -3,6 +3,7 @@ let menu = document.querySelector("#menu-list");
 let Hicon = document.getElementById("button-img");
 
 Hbutton.addEventListener("click", hmenuOpen);
+menu.addEventListener("click", hmenuOpen);
 
 function hmenuOpen() {
   console.log("teszt");
