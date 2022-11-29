@@ -745,17 +745,27 @@ footer p {
     font-size: 3rem;
   }
 
+  
 
 
   /*-----Blog Post--------*/
 
-  .blog-table {
-    gap: 3.5rem;
-  }
+
   .post-table-item {
     width: 29rem;
     height: 35rem;
 }
+
+/*-----Video Post--------*/
+
+
+.video-item {
+  width: 18rem;
+  height: 12rem;
+}
+
+
+
 
 /*-----Services--------*/
 
@@ -770,8 +780,112 @@ footer p {
 }
 
 
+@media only screen and (max-width: 640px) {
+
+  /*-----Portfolio--------*/
+ 
+ .portfolio-item {
+   width: 30rem;
+   height: 20rem;
+ }
+ 
+  
+  /*-----Blog Post--------*/
+
+
+  .post-table-item {
+    width: 29rem;
+    height: 35rem;
+}
+
+/*-----Video Post--------*/
+
+
+.video-item {
+  width: 30rem;
+  height: 20rem;
+}
+
+.contact-box {
+  width: 30rem;
+}
+textarea {
+  width: 25rem;
+}
+
+}
+
+
 
 @media only screen and (max-width: 530px) {
+
+  .hero {
+    height: 38rem;
+  }
+
+  #home h1 {
+    font-size: 4rem;
+  }
+
+  #home h2 {
+    font-size: 1.4rem;
+  }
+
+
+  #portfolio h2,
+#blog-post h2,
+#video-post h2,
+#services h2,
+#contact h2 {
+  letter-spacing: .1rem;
+  font-size: 4rem;
+
+}
+
+  .about-text {
+    font-size: 1.2rem;
+    padding: .1rem;
+  }
+
+  .text-git a {
+    display: none;
+  }
+
+/*-----Portfolio--------*/
+ 
+.portfolio-item {
+  width: 20rem;
+  height: 12rem;
+}
+
+#blog-post {
+  margin-top: 2rem;
+}
+.post-table-item {
+  height: 28rem;
+}
+
+
+/*-----Video Post--------*/
+
+.video-item {
+  width: 20rem;
+  height: 12rem;
+}
+
+/*-----Contact--------*/
+
+  .contact-box {
+    width: 21rem;
+  }
+
+  .input {
+    width: 16rem;
+  }
+
+  textarea {
+    width: 18rem;
+  }
 }
 
 /*-------------------------------------------------------------------------------Animacio--------------------------------------------------------------------------------*/
