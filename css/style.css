@@ -7,6 +7,37 @@
 body {
   background-color: black;
 }
+
+.cookie-poppupp{
+  background-color: gray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+ 
+}
+
+.cookie-poppupp p{
+  color: #141414;
+}
+.cookie-close{
+  display: inline;
+  display: flex;
+  align-items: center;
+}
+
+.cookie-close img{
+  width: 2rem;
+}
+
+
 a {
   text-decoration: none;
 }
