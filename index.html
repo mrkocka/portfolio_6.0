@@ -15,6 +15,11 @@
     <title>Mr.Kocka</title>
   </head>
   <body>
+    <div class="cookie-poppupp">
+      <p>Kedves felhasználó! Tájékoztatlak, hogy a felhasználói élmény javítása érdekében oldalam sütiket (cookie) használ. Erről itt olvashatsz bővebben.</p>
+      <div class="cookie-close"> <img src="./img/icon/close.svg" alt="xgomb"></div>
+    </div>
+
     <header>
       <nav class="nav-menu">
         <div id="js-button" class="hmenu-button">
@@ -147,38 +152,51 @@
       </section>
       <section id="portfolio">
         <h2 class="text-style">Portfólió</h2>
-        <nav>
+        <section>
           <ul class="portfolio-button-list">
-            <li><button class="btn">Weblapok</button></li>
-            <li><button class="btn">Appok</button></li>
-            <li><button class="btn">Grafikák</button></li>
+            <li>
+              <button
+                class="btn active-button portfolio-button"
+                data-filter="webpage"
+              >
+                Weblapok
+              </button>
+            </li>
+            <li>
+              <button class="btn portfolio-button" data-filter="webapp">
+                Appok
+              </button>
+            </li>
+            <li>
+              <button class="btn portfolio-button" data-filter="grafic">
+                Grafikák
+              </button>
+            </li>
           </ul>
-        </nav>
+        </section>
         <div class="portfolio-table">
           <div id="webpage" class="">
-            <div class="webpage-table">
-              <div class="portfolio-item">1</div>
-              <div class="portfolio-item">2</div>
-              <div class="portfolio-item">3</div>
-              <div class="portfolio-item">4</div>
-              <div class="portfolio-item">5</div>
-              <div class="portfolio-item">6</div>
-              <!--  <div class="portfolio-item">7</div>
-              <div class="portfolio-item">8</div>  -->
+            <div class="webpage-table tableX" data-filter="webpage">
+              <div class="portfolio-item">1web</div>
+              <div class="portfolio-item">2web</div>
+              <div class="portfolio-item">3web</div>
+              <div class="portfolio-item">4web</div>
+              <div class="portfolio-item">5web</div>
+              <div class="portfolio-item">6web</div>
             </div>
           </div>
           <div id="webapp" class="invisible">
-            <div class="webapp-table">
-              <div class="portfolio-item">1</div>
-              <div class="portfolio-item">2</div>
-              <div class="portfolio-item">3</div>
-              <div class="portfolio-item">4</div>
+            <div class="webapp-table tableX" data-filter="webapp">
+              <div class="portfolio-item">1webapp</div>
+              <div class="portfolio-item">2webapp</div>
+              <div class="portfolio-item">3webapp</div>
+              <div class="portfolio-item">4webapp</div>
             </div>
           </div>
           <div id="grafik" class="invisible">
-            <div class="grafik-table">
-              <div class="portfolio-item">1</div>
-              <div class="portfolio-item">2</div>
+            <div class="grafik-table tableX" data-filter="grafic">
+              <div class="portfolio-item">1 grafik</div>
+              <div class="portfolio-item">2 grafik</div>
             </div>
           </div>
         </div>
@@ -203,7 +221,6 @@
           <div class="video-item">4</div>
           <div class="video-item">5</div>
           <div class="video-item">6</div>
-          
         </div>
       </section>
 

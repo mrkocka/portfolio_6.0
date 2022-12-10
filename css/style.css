@@ -7,6 +7,35 @@
 body {
   background-color: black;
 }
+
+.cookie-poppupp {
+  background-color: gray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cookie-poppupp p {
+  color: #141414;
+}
+.cookie-close {
+  display: inline;
+  display: flex;
+  align-items: center;
+}
+
+.cookie-close img {
+  width: 2rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -84,6 +113,12 @@ html {
   box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 }
 
+.active-button {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
 /*------------------------------------------------------------Header--------------------------------------------------------------------*/
 .hero {
   width: 100%;
@@ -115,6 +150,10 @@ nav ul {
   display: flex;
   gap: 3rem;
   list-style: none;
+}
+
+nav ul li a:hover {
+  color: rgba(248, 248, 255, 0.288);
 }
 
 .list-item {
@@ -235,7 +274,7 @@ nav ul {
 #portfolio {
   margin-top: 8rem;
   padding-top: 5rem;
-  min-height: 70rem;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -305,7 +344,7 @@ nav ul {
 #video-post {
   margin-top: 3rem;
   padding-top: 5rem;
-  min-height: 60rem;
+  height: auto;
   margin-bottom: 4rem;
 }
 
@@ -352,8 +391,9 @@ nav ul {
 
 #contact {
   padding-top: 5rem;
-
   margin-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #contact h2 {
@@ -362,10 +402,11 @@ nav ul {
 
 .contact-box {
   background-image: url(../img/massageBg.webp);
-  width: 70%;
+  width: 40rem;
   border-radius: 25px;
   margin: 0 auto;
   padding: 1rem;
+  display: flex;
 }
 
 .form {
@@ -376,6 +417,7 @@ nav ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 2rem;
 }
 
@@ -626,7 +668,9 @@ footer p {
     letter-spacing: 0.3rem;
     font-size: 4rem;
   }
+
   /*-----Blog Post--------*/
+
   .post-table-item {
     width: 20rem;
     height: 28rem;
@@ -686,7 +730,174 @@ footer p {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  /*-----Portfolio--------*/
+  .webpage-table,
+  .webapp-table,
+  .grafik-table {
+    gap: 1.5rem;
+  }
+
+  .portfolio-item {
+    width: 18rem;
+    height: 12rem;
+  }
+
+  /*-----Video Post--------*/
+  .video-table {
+    gap: 1.5rem;
+  }
+
+  .video-item {
+    width: 18rem;
+    height: 12rem;
+  }
+
+  /*-----Blog Post--------*/
+  .post-table-item {
+    width: 18rem;
+    height: 25rem;
+  }
+
+  /*-----Contact--------*/
+
+  .contact-box {
+    background-image: url(../img/massageBg.webp);
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  #home h1 {
+    letter-spacing: 0.3rem;
+    font-size: 5rem;
+  }
+
+  #home h2 {
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+  }
+
+  /*-----Blog Post--------*/
+
+  .post-table-item {
+    width: 29rem;
+    height: 35rem;
+  }
+
+  /*-----Video Post--------*/
+
+  .video-item {
+    width: 18rem;
+    height: 12rem;
+  }
+
+  /*-----Services--------*/
+
+  .services-item {
+    width: 90%;
+  }
+
+  .contact-box {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  /*-----Portfolio--------*/
+
+  .portfolio-item {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  /*-----Blog Post--------*/
+
+  .post-table-item {
+    width: 29rem;
+    height: 35rem;
+  }
+
+  /*-----Video Post--------*/
+
+  .video-item {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .contact-box {
+    width: 30rem;
+  }
+  textarea {
+    width: 25rem;
+  }
+}
+
 @media only screen and (max-width: 530px) {
+  /*TODO a portfolio résznél nem jó a gombok reszponzivitása ebben a méretben!*/
+
+  #home h1 {
+    font-size: 4rem;
+  }
+
+  #home h2 {
+    font-size: 1.4rem;
+  }
+
+  #portfolio h2,
+  #blog-post h2,
+  #video-post h2,
+  #services h2,
+  #contact h2 {
+    letter-spacing: 0.1rem;
+    font-size: 4rem;
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+    padding: 0.1rem;
+  }
+
+  .text-git a {
+    display: none;
+  }
+
+  /*-----Portfolio--------*/
+
+  .portfolio-item {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  #blog-post {
+    margin-top: 2rem;
+  }
+  .post-table-item {
+    height: 28rem;
+  }
+
+  /*-----Video Post--------*/
+
+  .video-item {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  /*-----Contact--------*/
+
+  .contact-box {
+    width: 21rem;
+  }
+
+  .input {
+    width: 16rem;
+  }
+
+  textarea {
+    width: 18rem;
+  }
 }
 
 /*-------------------------------------------------------------------------------Animacio--------------------------------------------------------------------------------*/

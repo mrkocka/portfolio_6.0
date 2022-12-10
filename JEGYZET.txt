@@ -1,2 +1,6 @@
 width: 22rem;
     height: 28rem;
+
+
+
+    
