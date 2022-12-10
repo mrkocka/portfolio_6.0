@@ -26,20 +26,32 @@ function hmenuOpen() {
 
 //Variables
 let portButton = document.querySelectorAll(".portfolio-button");
-let table = document.querySelectorAll(".tableX");
+let itemBox = document.querySelectorAll(".portfolio-item");
 
+//For cycle by portfolio items
 for (let i = 0; i < portButton.length; i++) {
   portButton[i].addEventListener("click", function () {
     for (let j = 0; j < portButton.length; j++) {
       portButton[j].classList.remove("active-button");
     }
     this.classList.add("active-button");
+
+    let dataFilter = this.getAttribute("data-filter");
+
+    for (let k = 0; k < itemBox.length; k++) {
+      itemBox[k].classList.remove("active-table");
+      itemBox[k].classList.add("hide");
+
+      if (
+        itemBox[k].getAttribute("data-item") === dataFilter ||
+        dataFilter === "all"
+      ) {
+        itemBox[k].classList.remove("hide");
+        itemBox[k].classList.add("active-table");
+      }
+    }
   });
 }
-
-//Events
-
-//Funciton
 
 function proba() {
   console.log("I Love for cik! ;)");

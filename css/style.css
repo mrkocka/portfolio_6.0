@@ -47,9 +47,17 @@ html {
   display: none;
 }
 
+.active-table {
+  display: flex;
+}
+
 .active {
   transform: translatey(0);
   transition: transform 500ms ease-in-out;
+}
+
+.hide {
+  display: none;
 }
 
 /*colours*/
@@ -288,21 +296,16 @@ nav ul li a:hover {
   margin-bottom: 2rem;
 }
 
-.webpage-table,
-.webapp-table,
-.grafik-table {
-  /*  outline: 2px solid ghostwhite; */
+.portfolio-container {
   width: 97%;
   margin: 0 auto;
   padding: 1rem 0;
-  height: auto; /*Ezt majd tedd át autora*/
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
-  /*  overflow: scroll;
-  overflow-x:hidden; */
 }
 
 .portfolio-item {
