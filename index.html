@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
     <link
       rel="icon"
       href="./img/logo/Mr.K_noBG.webp"
@@ -15,7 +18,8 @@
     <title>Mr.Kocka</title>
   </head>
   <body>
-    <div id="popup-js" class="popup-container">
+    <!-- TODO Vissza kapcsolhatod ha kész vagy -->
+    <!--  <div id="popup-js" class="popup-container">
       <div class="cookie-poppupp">
         <p>
           Kedves felhasználó! Tájékoztatlak, hogy a felhasználói élmény javítása
@@ -26,7 +30,7 @@
           <img id="close-js" src="./img/icon/close.svg" alt="xgomb" />
         </div>
       </div>
-    </div>
+    </div> -->
 
     <header>
       <nav class="nav-menu">
@@ -160,7 +164,7 @@
       </section>
       <section id="portfolio">
         <h2>Portfólió</h2>
-        <section>
+         <section>
           <ul class="portfolio-button-list">
             <li>
               <button
@@ -168,7 +172,7 @@
                 data-filter="all"
               >
                 Összes
-              </button>
+              </button> 
             </li>
             <li>
               <button class="btn portfolio-button" data-filter="webpage">
@@ -188,20 +192,297 @@
           </ul>
         </section>
         <div class="portfolio-container">
-          <div class="portfolio-item" data-item="webpage">1web</div>
-          <div class="portfolio-item" data-item="webapp">1webapp</div>
-          <div class="portfolio-item" data-item="grafic">1 grafik</div>
-          <div class="portfolio-item" data-item="webpage">2web</div>
-          <div class="portfolio-item" data-item="webapp">2webapp</div>
-          <div class="portfolio-item" data-item="grafic">2 grafik</div>
-          <div class="portfolio-item" data-item="webpage">3web</div>
-          <div class="portfolio-item" data-item="webapp">3webapp</div>
-          <div class="portfolio-item" data-item="grafic">3 grafik</div>
-          <div class="portfolio-item" data-item="webpage">4web</div>
-          <div class="portfolio-item" data-item="webapp">4webapp</div>
-          <div class="portfolio-item" data-item="grafic">4 grafik</div>
-          <div class="portfolio-item" data-item="webpage">5web</div>
-          <div class="portfolio-item" data-item="webpage">6web</div>
+          <div class="portfolio-item" data-item="webpage">
+            <img
+              class="project-img"
+              src="./img/project.jpg"
+              alt="projektKépe"
+            />
+            <h3 class="project-title">Weblap neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="webapp">
+            <img class="project-img" src="./img/project.jpg" alt="projektKépe" />
+            <h3 class="project-title">App neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="grafic">
+            <img class="project-img" src="./img/project.jpg" alt="projektKépe" />
+            <h3 class="project-title">Grafikai projekt </h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="webpage">
+            <img
+              class="project-img"
+              src="./img/project.jpg"
+              alt="projektKépe"
+            />
+            <h3 class="project-title">Weblap neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-item="webapp">
+            <img class="project-img" src="./img/project.jpg" alt="projektKépe" />
+            <h3 class="project-title">App neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="grafic">
+            <img class="project-img" src="./img/project.jpg" alt="projektKépe" />
+            <h3 class="project-title">Grafikai projekt</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="webpage">
+            <img
+              class="project-img"
+              src="./img/project.jpg"
+              alt="projektKépe"
+            />
+            <h3 class="project-title">Weblap neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="webapp">
+            <img class="project-img" src="./img/project.jpg" alt="projektKépe" />
+            <h3 class="project-title">App neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="grafic">
+            <img class="project-img" src="./img/project.jpg" alt="projektKépe" />
+            <h3 class="project-title">Grafikai projekt</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="webpage">
+            <img
+              class="project-img"
+              src="./img/project.jpg"
+              alt="projektKépe"
+            />
+            <h3 class="project-title">Weblap neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="webapp">
+            <img class="project-img" src="./img/project.jpg" alt="projektKépe" />
+            <h3 class="project-title">App neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="grafic">
+            <img class="project-img" src="./img/project.jpg" alt="projektKépe" />
+            <h3 class="project-title">Grafikai projekt</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="webpage">
+            <img
+              class="project-img"
+              src="./img/project.jpg"
+              alt="projektKépe"
+            />
+            <h3 class="project-title">Weblap neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-item" data-item="webpage">
+            <img
+              class="project-img"
+              src="./img/project.jpg"
+              alt="projektKépe"
+            />
+            <h3 class="project-title">Weblap neve</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellat ex vitae recusandae cumque dicta, sequi dolorum, odit,
+              corrupti ipsa reprehenderit mollitia!
+            </p>
+            <div class="project-icon">
+              <ul>
+                <li>
+                  <a href="#"> <i class="bi bi-github"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="bi bi-globe2"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -270,6 +551,7 @@
       </section>
       <section class="center-box">
         <div class="soc-icon">
+          <!-- TODO Az ikonokat ki kell cserélni bootstrap ikonra -->
           <ul class="soc-icon-list">
             <li>
               <a href=""> <img src="./img/icon/facebook.svg" alt="" /></a>

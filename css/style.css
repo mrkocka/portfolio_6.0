@@ -53,7 +53,7 @@ html {
 }
 
 .active-table {
-  display: flex;
+  display: block; /*Ez flex volt*/
 }
 
 .active {
@@ -295,6 +295,7 @@ nav ul li a:hover {
 
 .portfolio-button-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   gap: 2rem;
@@ -317,8 +318,44 @@ nav ul li a:hover {
   background-color: var(--main-bcitem);
   max-width: 100%;
   width: 30rem;
-  height: 20rem;
+  height: auto;
   border-radius: 25px;
+  padding: 0.8rem;
+}
+.project-img {
+  width: 100%;
+}
+.project-title {
+  color: var(--main-text);
+  text-shadow: 1px 1px 2px black;
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.project-text {
+  font-size: 1.2rem;
+  text-align: start;
+  margin-bottom: 1rem;
+  line-height: 150%;
+}
+
+.project-icon ul {
+  display: flex;
+  list-style: none;
+  gap: 1.4rem;
+  justify-content: flex-end;
+}
+
+.bi-github,
+.bi-globe2 {
+  color: var(--main-text);
+  font-size: 2rem;
+  text-shadow: none;
+}
+
+.bi-github:hover,
+.bi-globe2:hover {
+  color: var(--main-bcsecton);
 }
 
 /*-----Blog Post--------*/
@@ -585,7 +622,11 @@ footer p {
   }
   .portfolio-item {
     width: 25rem;
-    height: 15rem;
+    /*     height: 15rem; */
+  }
+
+  .project-text {
+    font-size: 1rem;
   }
 
   /*-----Video Post--------*/
@@ -723,7 +764,11 @@ footer p {
   /*-----Portfolio--------*/
   .portfolio-item {
     width: 15rem;
-    height: 10rem;
+    /*     height: 10rem; */
+  }
+
+  .project-text {
+    line-height: 110%;
   }
 
   /*-----Video Post--------*/
@@ -748,7 +793,7 @@ footer p {
 
   .portfolio-item {
     width: 18rem;
-    height: 12rem;
+    /*   height: 12rem; */
   }
 
   /*-----Video Post--------*/
@@ -818,7 +863,12 @@ footer p {
 
   .portfolio-item {
     width: 30rem;
-    height: 20rem;
+    /*   height: 20rem; */
+  }
+
+  .project-text {
+    font-size: 1.2rem;
+    line-height: 150%;
   }
 
   /*-----Blog Post--------*/
@@ -874,9 +924,19 @@ footer p {
 
   /*-----Portfolio--------*/
 
+  .portfolio-button-list {
+    gap: 0.5rem;
+  }
+
+  .portfolio-button {
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+  }
+
   .portfolio-item {
     width: 20rem;
-    height: 12rem;
+    /*   height: 12rem; */
   }
 
   #blog-post {
@@ -884,6 +944,11 @@ footer p {
   }
   .post-table-item {
     height: 28rem;
+  }
+
+  .project-text {
+    font-size: 1rem;
+    line-height: 150%;
   }
 
   /*-----Video Post--------*/
