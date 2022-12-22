@@ -53,6 +53,22 @@ for (let i = 0; i < portButton.length; i++) {
   });
 }
 
+//--------------------------------------Pop Up ---------------------------------------
+
+let close = document.getElementById("close-js");
+
+window.addEventListener("load", function () {
+  this.setTimeout(function open(event) {
+    document.getElementById("popup-js").classList.toggle("popup-container");
+  }, 3000);
+});
+
+close.addEventListener("click", cloesPopUp);
+
+function cloesPopUp() {
+  document.getElementById("popup-js").classList.toggle("popup-container");
+}
+
 function proba() {
   console.log("I Love for cik! ;)");
 }

@@ -8,6 +8,10 @@ body {
   background-color: black;
 }
 
+.popup-container {
+  opacity: 0;
+}
+
 .cookie-poppupp {
   background-color: gray;
   position: fixed;
@@ -30,6 +34,7 @@ body {
   display: inline;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .cookie-close img {
