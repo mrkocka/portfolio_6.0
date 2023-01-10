@@ -286,11 +286,16 @@ nav ul li a:hover {
 
 #portfolio {
   margin-top: 8rem;
-  padding-top: 5rem;
+  padding: 5rem 0;
   min-height: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    url(../img/back.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .portfolio-button-list {
@@ -415,7 +420,13 @@ nav ul li a:hover {
 #services {
   min-height: 60rem;
   padding-top: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)),
+    url(../img/black-bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 .services-table {
   display: flex;
   justify-content: center;
@@ -895,6 +906,9 @@ footer p {
 
 @media only screen and (max-width: 530px) {
   /*TODO a portfolio résznél nem jó a gombok reszponzivitása ebben a méretben!*/
+  .hero {
+    height: 43rem;
+  }
 
   #home h1 {
     font-size: 4rem;
