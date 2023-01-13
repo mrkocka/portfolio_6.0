@@ -4,3 +4,25 @@ width: 22rem;
 
 
     https://www.youtube.com/watch?v=ATeWQlY3N04&t=24s
+
+TODO Projektek részt feltölteni valós tartalmakkal 
+
+TODO Cikkek stílusát megalkotni 
+
+TODO Cikkeket valós tartalommal feltölteni 
+
+
+TODO Szolgálatások grafikus tartalomhoz szöveget írni
+
+
+Fontos mellék oldalak: 
+
+TODO Sütik kezelése alolda
+
+TODO Adat kezelése alolda
+
+TODO impresszum alolda
+
+TODO Kapcsolat aloldal 
+
+TODO Köszönettel Tartozom aloldal
