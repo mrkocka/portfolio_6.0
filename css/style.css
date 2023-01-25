@@ -513,8 +513,8 @@ nav ul li a:hover {
   font-weight: bold;
   font-size: 2.2rem;
   text-align: center;
-  color: red;
-  text-shadow: 1px 1px 2px black;
+  color: #f57600;
+  text-shadow: 2px 2px 3px black;
   font-family: titleFont;
 }
 
@@ -684,6 +684,29 @@ footer p {
 
 .footer-nav-list li a:hover {
   color: rgba(248, 248, 255, 0.288);
+}
+
+/*------------------text-table--------------------*/
+
+.text-table {
+  background-color: var(--main-bcitem);
+  width: 97%;
+  margin: -10rem auto 4rem auto;
+  padding: 1.3rem;
+  border-radius: 15px;
+}
+
+.cookie-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: titleFont;
+  text-shadow: 2px 2px 4px black;
+}
+.cookie-title {
+  font-family: menuFont;
+  color: var(--main-text);
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 4px black;
 }
 
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
