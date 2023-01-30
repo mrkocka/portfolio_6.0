@@ -687,12 +687,13 @@ footer p {
 }
 
 /*------------------text-table--------------------*/
+/*TODO szabály kell a sütik a tag-jeihez*/
 
 .text-table {
   background-color: var(--main-bcitem);
-  width: 97%;
-  margin: -10rem auto 4rem auto;
-  padding: 1.3rem;
+  width: 94%;
+  margin: -15rem auto 4rem auto;
+  padding: 1.3rem 8rem;
   border-radius: 15px;
 }
 
@@ -701,12 +702,34 @@ footer p {
   font-weight: bold;
   font-family: titleFont;
   text-shadow: 2px 2px 4px black;
+  margin: 1rem 0;
 }
 .cookie-title {
   font-family: menuFont;
   color: var(--main-text);
   font-size: 2.2rem;
   text-shadow: 2px 2px 4px black;
+}
+
+.text-table h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.cookie-list {
+  margin-left: 3rem;
+  line-height: 180%;
+}
+
+.cookie-list li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: titleFont;
+  text-shadow: 2px 2px 4px black;
+  color: var(--main-text);
+}
+.cookie-specbox {
+  padding-left: 6rem;
 }
 
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
