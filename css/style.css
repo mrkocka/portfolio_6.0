@@ -322,7 +322,7 @@ nav ul li a:hover {
 .portfolio-item {
   background-color: var(--main-bcitem);
   max-width: 100%;
-  width: 30rem;
+  width: 20rem;
   height: auto;
   border-radius: 25px;
   padding: 0.6rem;
@@ -764,7 +764,7 @@ footer p {
     flex-direction: column;
   }
   .portfolio-item {
-    width: 25rem;
+    width: 25rem;  /*25*/
     /*     height: 15rem; */
   }
 
