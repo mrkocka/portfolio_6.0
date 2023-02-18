@@ -176,7 +176,7 @@ nav ul li a:hover {
   font-family: menuFont;
 }
 
-#home h1 {
+#home h1, .cooke-header {
   font-family: menuFont;
   font-size: 6rem;
   letter-spacing: 0.5rem;
@@ -697,12 +697,24 @@ footer p {
   border-radius: 15px;
 }
 
+
 .cookie-text {
   font-size: 1.2rem;
   font-weight: bold;
   font-family: titleFont;
   text-shadow: 2px 2px 4px black;
   margin: 1rem 0;
+}
+
+.cookie-a {
+  color: var(--main-text);
+/*   font-family: menuFont; */
+  text-shadow: 2px 2px 4px black;
+  font-size: 1.2rem;
+}
+
+.cookie-a:hover {
+  color: rgba(248, 248, 255, 0.288);
 }
 .cookie-title {
   font-family: menuFont;
@@ -748,6 +760,12 @@ footer p {
     width: 25rem;
     height: 28rem;
   }
+  .text-table{
+    padding: 1.3rem 4rem;
+  }
+  .text-table h2 {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 1119px) {
@@ -756,6 +774,8 @@ footer p {
   .video-table {
     width: 100%;
   }
+
+
 }
 
 @media only screen and (max-width: 1094px) {
@@ -764,7 +784,7 @@ footer p {
     flex-direction: column;
   }
   .portfolio-item {
-    width: 25rem;  /*25*/
+    width: 25rem; /*25*/
     /*     height: 15rem; */
   }
 
@@ -849,6 +869,17 @@ footer p {
     color: black;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
   }
+
+  .text-table{
+    padding: 1.3rem 2rem;
+  }
+  .text-table h2 {
+    font-size: 2.6rem;
+  }
+  .cookie-specbox {
+    padding-left: 3rem;
+}
+
 }
 
 @media only screen and (max-width: 920px) {
@@ -901,6 +932,10 @@ footer p {
   .footer-nav {
     width: 100%;
   }
+
+  .cookie-specbox {
+    padding-left: 1rem;
+}
 }
 
 @media only screen and (max-width: 820px) {
@@ -924,6 +959,11 @@ footer p {
   .services-table :last-child {
     width: 90%;
   }
+
+  .text-table h2 {
+    font-size: 2.1rem;
+  }
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -963,6 +1003,11 @@ footer p {
     margin: 0 auto;
     padding: 1rem;
   }
+
+  .cooke-header {
+    font-size: 4rem;
+  }
+
 }
 
 @media only screen and (max-width: 685px) {
@@ -1033,6 +1078,10 @@ footer p {
   }
   textarea {
     width: 25rem;
+  }
+
+  .cooke-header {
+    font-size: 3rem;
   }
 }
 
@@ -1116,6 +1165,22 @@ footer p {
 
   textarea {
     width: 18rem;
+  }
+
+  .cooke-header {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .text-table {
+    padding: 1.3rem .5rem;
+  }
+  .cookie-text, .cookie-list li {
+    font-size: 1.1rem;
+    margin-left: 0rem;
+  }
+  .cookie-title {
+    font-size: 1.6rem;
   }
 }
 
