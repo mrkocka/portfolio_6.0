@@ -55,20 +55,25 @@ for (let i = 0; i < portButton.length; i++) {
 
 //--------------------------------------Pop Up ---------------------------------------
 
+//Variables
 let close = document.getElementById("close-js");
 
+//This EventListener waits 3 s after the screen loads and performs the specified action.
 window.addEventListener("load", function () {
   this.setTimeout(function open(event) {
     document.getElementById("popup-js").classList.toggle("popup-container");
   }, 3000);
 });
 
-close.addEventListener("click", cloesPopUp);
+//This EventListener wait click :)
+close.addEventListener("click", closePopUp);
 
-function cloesPopUp() {
+//This function close PopUp
+function closePopUp() {
   document.getElementById("popup-js").classList.toggle("popup-container");
 }
 
+//This is a test function that I forgot to delete
 function proba() {
   console.log("I Love for cik! ;)");
 }

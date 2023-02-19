@@ -176,7 +176,8 @@ nav ul li a:hover {
   font-family: menuFont;
 }
 
-#home h1, .cooke-header {
+#home h1,
+.cooke-header {
   font-family: menuFont;
   font-size: 6rem;
   letter-spacing: 0.5rem;
@@ -697,7 +698,6 @@ footer p {
   border-radius: 15px;
 }
 
-
 .cookie-text {
   font-size: 1.2rem;
   font-weight: bold;
@@ -708,7 +708,7 @@ footer p {
 
 .cookie-a {
   color: var(--main-text);
-/*   font-family: menuFont; */
+  /*   font-family: menuFont; */
   text-shadow: 2px 2px 4px black;
   font-size: 1.2rem;
 }
@@ -728,12 +728,17 @@ footer p {
   text-align: center;
   margin: 2rem 0;
 }
-.cookie-list {
+.cookie-list,
+.impress-list {
   margin-left: 3rem;
   line-height: 180%;
 }
+.impress-list {
+  margin-bottom: 3rem;
+}
 
-.cookie-list li {
+.cookie-list li,
+.impress-list li {
   font-size: 1.2rem;
   font-weight: bold;
   font-family: titleFont;
@@ -742,6 +747,11 @@ footer p {
 }
 .cookie-specbox {
   padding-left: 6rem;
+}
+
+.definitions {
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------------------Respanzive mode-----------------------------------------------------------------------------*/
@@ -760,7 +770,7 @@ footer p {
     width: 25rem;
     height: 28rem;
   }
-  .text-table{
+  .text-table {
     padding: 1.3rem 4rem;
   }
   .text-table h2 {
@@ -774,8 +784,6 @@ footer p {
   .video-table {
     width: 100%;
   }
-
-
 }
 
 @media only screen and (max-width: 1094px) {
@@ -870,7 +878,7 @@ footer p {
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
   }
 
-  .text-table{
+  .text-table {
     padding: 1.3rem 2rem;
   }
   .text-table h2 {
@@ -878,8 +886,11 @@ footer p {
   }
   .cookie-specbox {
     padding-left: 3rem;
-}
+  }
 
+  .cooke-header {
+    margin-top: -10rem;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -935,7 +946,7 @@ footer p {
 
   .cookie-specbox {
     padding-left: 1rem;
-}
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -963,7 +974,6 @@ footer p {
   .text-table h2 {
     font-size: 2.1rem;
   }
-
 }
 
 @media only screen and (max-width: 750px) {
@@ -1007,7 +1017,6 @@ footer p {
   .cooke-header {
     font-size: 4rem;
   }
-
 }
 
 @media only screen and (max-width: 685px) {
@@ -1173,14 +1182,19 @@ footer p {
   }
 
   .text-table {
-    padding: 1.3rem .5rem;
+    padding: 1.3rem 0.5rem;
   }
-  .cookie-text, .cookie-list li {
+  .cookie-text,
+  .cookie-list li {
     font-size: 1.1rem;
     margin-left: 0rem;
   }
   .cookie-title {
     font-size: 1.6rem;
+  }
+
+  .cooke-header {
+    margin-top: -10rem;
   }
 }
 
