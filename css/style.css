@@ -218,11 +218,13 @@ nav ul li a:hover {
 }
 
 .about-text {
-  /*   background-color: gray; */
   font-size: 1.4rem;
   line-height: 180%;
   padding: 2rem;
   text-align: justify;
+}
+
+.about-text p {
   font-family: titleFont;
   text-shadow: 3px 3px 4px black;
 }
@@ -242,6 +244,11 @@ nav ul li a:hover {
 
 .text-git img {
   width: 3rem;
+}
+
+.CV-button-box {
+  display: flex;
+  justify-content: center;
 }
 
 .skills {
@@ -1095,7 +1102,6 @@ footer p {
 }
 
 @media only screen and (max-width: 530px) {
-  /*TODO a portfolio résznél nem jó a gombok reszponzivitása ebben a méretben!*/
   .hero {
     height: 43rem;
   }
@@ -1122,8 +1128,10 @@ footer p {
     padding: 0.1rem;
   }
 
-  .text-git a {
-    display: none;
+  .skil-title {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    text-align: center;
   }
 
   /*-----Portfolio--------*/
@@ -1197,7 +1205,6 @@ footer p {
     margin-top: -10rem;
   }
 }
-
 /*-------------------------------------------------------------------------------Animacio--------------------------------------------------------------------------------*/
 
 .services-item:hover {

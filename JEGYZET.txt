@@ -15,20 +15,11 @@ TODO Cikkeket valós tartalommal feltölteni
 
 TODO Szolgálatások grafikus tartalomhoz szöveget írni
 
-TODO Kell egy CV letöltőgomb a Heroba
 
-TODO Construct 3 lecserélni LINUXra
 
 
 Fontos mellék oldalak: 
 
-TODO Sütik kezelése alolda
-
-TODO Adat kezelése alolda
-
-TODO impresszum alolda
-
-TODO Kapcsolat aloldal 
 
 TODO Köszönettel Tartozom aloldal
 
