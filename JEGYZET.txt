@@ -7,12 +7,17 @@ width: 22rem;
 
 TODO Projektek részt feltölteni valós tartalmakkal 
 
-TODO Cikkek stílusát megalkotni 
+TODO Grafikus anyagoknak egy galéria kell a főoldalra 
+
+TODO Portfolióban a Grafika gombol legyen "Scriptek"
 
 TODO Cikkeket valós tartalommal feltölteni 
 
-
 TODO Szolgálatások grafikus tartalomhoz szöveget írni
+
+TODO Kell egy CV letöltőgomb a Heroba
+
+TODO Construct 3 lecserélni LINUXra
 
 
 Fontos mellék oldalak: 
@@ -26,3 +31,5 @@ TODO impresszum alolda
 TODO Kapcsolat aloldal 
 
 TODO Köszönettel Tartozom aloldal
+
+
