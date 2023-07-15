@@ -1,3 +1,4 @@
+
 width: 22rem;
     height: 28rem;
 
@@ -5,15 +6,17 @@ width: 22rem;
 
     https://www.youtube.com/watch?v=ATeWQlY3N04&t=24s
 
-TODO Projektek részt feltölteni valós tartalmakkal 
+TODO Portfolió főoldal részt átszabni 
+            - weblapok
+            - webapp
+            - script&python 
+            - grafika 
+            - Elektornika 
 
-TODO Grafikus anyagoknak egy galéria kell a főoldalra 
+TODO Aloldalak kellenek a portfhoz
 
-TODO Portfolióban a Grafika gombol legyen "Scriptek"
+TODO Cikkek részt újra gondolni 
 
-TODO Cikkeket valós tartalommal feltölteni 
-
-TODO Szolgálatások grafikus tartalomhoz szöveget írni
 
 
 
