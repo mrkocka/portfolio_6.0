@@ -306,6 +306,23 @@ nav ul li a:hover {
   background-repeat: no-repeat;
 }
 
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 1.5rem;
+  
+  
+}
+
+.p-gallery-item {
+  background-color: var(--main-bcitem);
+  width: 28rem;
+  height: 20rem;
+  border-radius: 25px;
+}
+
 /*-----Blog Post--------*/
 
 #blog-post {
