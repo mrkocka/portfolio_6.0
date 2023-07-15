@@ -157,6 +157,7 @@ html {
   width: 100%;
   top: 0;
   background-color: var(--main-bcnav);
+  z-index: 1;
 }
 
 nav ul {
@@ -312,17 +313,82 @@ nav ul li a:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem 1.5rem;
-  
-  
+  padding-top: 2rem;
 }
 
 .p-gallery-item {
   background-color: var(--main-bcitem);
-  width: 28rem;
-  height: 20rem;
+  width: 28rem; /*448px*/
+  height: 18rem; /*320px*/
   border-radius: 25px;
 }
 
+.webpage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    url(../img/portfolio/weblap.png);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.webapp {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    url(../img/portfolio/webapp.png);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.script {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    url(../img/portfolio/scriptnpyton.png);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.grafik {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    url(../img/portfolio/grafik.png);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.elctro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    url(../img/portfolio/elektorinka.png);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0); /* Kezdetben teljesen átlátszó */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  border-radius: 25px;
+}
+
+.overlay-text {
+  color: white; /* Vagy tetszőleges szín */
+  font-size: 20px; /* Vagy tetszőleges méret */
+  font-family: menuFont;
+  font-size: 2rem;
+}
+.webpage:hover .overlay,
+.webapp:hover .overlay,
+.script:hover .overlay,
+.elctro:hover .overlay,
+.grafik:hover .overlay {
+  background: rgba(0, 0, 0, 0.6); /* Egérrel rámutatva, félig átlátszó fekete */
+  opacity: 1;
+}
+
+.electronik {
+}
 /*-----Blog Post--------*/
 
 #blog-post {

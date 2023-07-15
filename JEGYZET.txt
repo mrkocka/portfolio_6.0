@@ -6,12 +6,6 @@ width: 22rem;
 
     https://www.youtube.com/watch?v=ATeWQlY3N04&t=24s
 
-TODO Portfolió főoldal részt átszabni 
-            - weblapok
-            - webapp
-            - script&python 
-            - grafika 
-            - Elektornika 
 
 TODO Aloldalak kellenek a portfhoz
 
